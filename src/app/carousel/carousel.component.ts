@@ -10,15 +10,18 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class CarouselComponent {
   currentImageIndex: number = 0;
-  totalImages: number = 5;
+  totalImages: number = 8;
 
   private intervalId!: number;
 
-  ngOnInit(): void {
-    this.intervalId = window.setInterval(() => {
-      this.nextImage();
-    }, 3000);
+  ngOnInit() {
+    if (typeof window !== 'undefined') {
+      setInterval(() => {
+        this.nextImage();
+      }, 3000);
+    }
   }
+  
 
   ngOnDestroy(): void {
     if (this.intervalId) {
