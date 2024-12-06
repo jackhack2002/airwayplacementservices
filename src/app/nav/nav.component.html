@@ -15,19 +15,19 @@
 
   <div id="menu"
     class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:justify-between w-full sm:w-auto text-xl text-cyan-600 mt-4 ml-20 sm:mt-0">
-    <a href="#home" class="px-1 mx-2 py-2 hover:text-cyan-800 w-18">Home</a>
-    <a href="#clients" class="px-1 mx-2 py-2 hover:text-cyan-800 w-18">Clients</a>
-    <a href="#aboutus" class="px-1 mx-2 py-2 hover:text-cyan-800 w-24">About Us</a>
-    <a href="#contactus" class="px-1 mx-2 py-2 hover:text-cyan-800 w-28">Contact Us</a>
-    <a href="https://forms.gle/akhtmmPhwK3EVrSf8" target="_blank" class="px-1 mx-2 py-2 hover:text-cyan-800">Form</a>
+    <a (click)="toggle()" href="#home" class="px-1 mx-2 py-2 hover:text-cyan-800 w-18">Home</a>
+    <a (click)="toggle()" href="#clients" class="px-1 mx-2 py-2 hover:text-cyan-800 w-18">Clients</a>
+    <a (click)="toggle()" href="#aboutus" class="px-1 mx-2 py-2 hover:text-cyan-800 w-24">About Us</a>
+    <a (click)="toggle()" href="#contactus" class="px-1 mx-2 py-2 hover:text-cyan-800 w-28">Contact Us</a>
+    <a (click)="toggle()" href="https://forms.gle/akhtmmPhwK3EVrSf8" target="_blank" class="px-1 mx-2 py-2 hover:text-cyan-800">Form</a>
   </div>
 
 
 </nav>
 <div class="bg-white sm:hidden flex fixed h-fit text-center text-cyan-500 border-4 border-cyan-500 w-40 right-2 top-20 z-10  flex-col" *ngIf ="menuView">
-  <a href="#home" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">Home</a>
-  <a href="#clients" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">Clients</a>
-  <a href="#aboutus" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">About Us</a>
-  <a href="#contactus" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">Contact Us</a>
-  <a href="https://forms.gle/akhtmmPhwK3EVrSf8" target="_blank" class=" border-2 border-cyan-500 w-full hover:text-cyan-800">Form</a>
+  <a (click)="toggle()" href="#home" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">Home</a>
+  <a (click)="toggle()" href="#clients" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">Clients</a>
+  <a (click)="toggle()" href="#aboutus" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">About Us</a>
+  <a (click)="toggle()" href="#contactus" class=" border-2 border-cyan-500 hover:text-cyan-800 w-full">Contact Us</a>
+  <a (click)="toggle()" href="https://forms.gle/akhtmmPhwK3EVrSf8" target="_blank" class=" border-2 border-cyan-500 w-full hover:text-cyan-800">Form</a>
 </div>

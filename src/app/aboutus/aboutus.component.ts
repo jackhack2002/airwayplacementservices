@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AboutusComponent {
 
-description: string = `We are committed to delivering excellent service and providing innovative solutions for our customers. Our team works tirelessly to meet and exceed expectations.`;
+description: string = ``;
 mission: string = `To provide exceptional value and foster long-term relationships through our commitment to excellence.`;
 vision: string = `To be a leader in our industry by setting standards of quality, innovation, and trust.`;
 
